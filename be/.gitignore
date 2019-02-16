@@ -1,0 +1,66 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+server-*
+cron-temp
+api-temp
+gosimple
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Editor settings
+.glide/
+.idea/
+.vscode/
+temp.iml
+
+# SSL
+ssl/
+# Development ini file
+!development/
+
+development/*
+!files/etc/template/development
+
+# Merge conflict file
+*.orig
+
+# Mac OS
+.DS_Store
+
+*.swp
+node_modules
+dist
+distServer
+coverage
+
+# environment config file
+.env
+
+# build related file
+.babelCache
+.happypack
+build
+webpack-stats.json
+package-lock.json
+webpack-assets.json
+
+dump.rdb
+database.sqlite
+
+scripts/perf/logs
+scripts/perf/errors
+
+logs/
+*.report.html
+*.log
+
+!scripts/logs/
+!.gitkeep
+vendor/

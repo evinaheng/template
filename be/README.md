@@ -1,4 +1,4 @@
-# FLIGHT DISCOVERY BACKEND
+# Template Project for creating API
 
 ## How To Develop
 

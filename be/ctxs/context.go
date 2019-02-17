@@ -123,9 +123,6 @@ func IPAddressFromContext(ctx context.Context) (net.IP, bool) {
 // =============
 // HEADER DATA
 // =============
-func DateKeyToContext(ctx context.Context, req *http.Request) context.Context {
-	return context.WithValue(ctx, DateKey, req.Header.Get("Date"))
-}
 
 func DateKeyFromContext(ctx context.Context) (string, bool) {
 	ua, ok := ctx.Value(DateKey).(string)

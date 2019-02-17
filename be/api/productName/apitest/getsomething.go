@@ -3,9 +3,7 @@ package apitest
 import (
 	"context"
 	"net/http"
-	"strings"
 
-	"github.com/template/be/ctxs"
 	"github.com/template/be/lib/language"
 	"github.com/template/be/lib/router"
 	"github.com/template/be/locale"
@@ -29,10 +27,6 @@ func (m *Module) getTestingData(ctx context.Context, param *router.HandlerParam)
 		apiResult.SetError(locale.Translate(language.ID, "ErrorServer"), "45", http.StatusBadRequest)
 		return apiResult
 	}
-
-	// Validate country
-	countryID, _ := ctxs.CountryIDFromContext(ctx)
-	countryID = strings.ToUpper(countryID)
 
 	// Process result
 	resultData := router.ArrObject{}
